@@ -8,7 +8,7 @@ Contact: zeyang.geng@chalmers.se
 Folder
  |
  |- Main.m
- |   |
+ |   | 
  |   |- Initiate the state of charge for each electrode with a number between 0 and 1.
  |   |- Set up the simulation time and voltage limitations. The simulation will stop when it either reaches the maximum time or the voltage limitations.
  |   |- Chose the time step. In the current version a constant time step is used and it is possible to implement variable time step if needed.
