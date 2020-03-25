@@ -62,7 +62,7 @@ c_s_max_neg = 31390; % maximum concentration mol/m3
 k_ct_neg = 2e-11;   % rate constant
 
 % OCV curve
-filename = 'COMSOL_Graphite_OCV.txt';
+filename = 'Graphite_OCV.txt';
 fileID = fopen(filename,'r');
 dataArray = textscan(fileID, '%f%f%[^\n\r]', 'Delimiter', ' ', 'MultipleDelimsAsOne', true, 'TextType', 'string',  'ReturnOnError', false);
 theta_lookup_neg = dataArray{1};
@@ -76,7 +76,7 @@ c_s_max_pos = 48390; % maximum concentration mol/m3
 k_ct_pos = 2e-11;   % rate constant
 
 % OCV curve
-filename = 'COMSOL_NMC_OCV.txt';
+filename = 'NMC_OCV.txt';
 fileID = fopen(filename,'r');
 dataArray = textscan(fileID, '%f%f%[^\n\r]', 'Delimiter', ' ', 'MultipleDelimsAsOne', true, 'TextType', 'string',  'ReturnOnError', false);
 theta_lookup_pos = dataArray{1};
