@@ -1,3 +1,12 @@
+% The operators were originally constructed in the following paper
+% @article{Mattsson2012,
+% Author={K. Mattsson},
+% Title={Summation by parts operators for finite difference approximations of second--derivatives with variable coefficient},
+% Journal={J. Sci. Comput.},
+% Volume={51},
+% Year={2012},
+% Pages={650--682},
+% }
 function [H,D2,S] = SBP_variable_2(m,h,c)
 
 % Norm

@@ -1,3 +1,12 @@
+% The operators were originally constructed in the following paper
+% @article{Mattsson2006,
+% Author={K.~Mattsson and J. Nordstr\"{o}m},
+% Title={High order finite difference methods for wave propagation in discontinuous media},
+% Journal={J. Comput. Phys.},
+% Volume={220},
+% Year={2006},
+% Pages={249--269},
+% }
 function [H,D1,D2,S] = SBP4(m,h)
 H=diag(ones(m,1),0);
 H(1:4,1:4)=diag([17/48 59/48 43/48 49/48]);
