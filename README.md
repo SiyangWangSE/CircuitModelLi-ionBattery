@@ -21,7 +21,7 @@ Folder
  |   |     
  |   |- Set the current. Right now only constant current is used. Discharge current is positive and charge current is negative.  
  |   |- Setup_parameters (See explanations below)  
- |   |- Create_Laplacian (See explanations below)  
+ |   |- SpatialDiscretization (See explanations below)  
  |   |- Initialization (See explanations below)     
  |   |- Simulation_loop (See explanations below)     
  |   +- Plot the discharge voltage profile.  
@@ -36,9 +36,9 @@ Folder
  |   |- The number of the mesh element in the particle is 30 by default.  
  |   +- A finer mesh increases both the accuracy and the calculation time.  
  |   
- |- Create_Laplacian.m  
+ |- SpatialDiscretization.m  
  |   |  
- |   +- Any comments here?  
+ |   +- The spatial derivatives are approximated by summation by parts (SBP) finite difference operators. Boundary and material interface conditions are imposed by the simultaneous approximation term (SAT). 
  |     
  |- Initialization.m      
  |   |  
